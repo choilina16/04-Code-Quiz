@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lina's Coding Quiz!</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    
+    <div id="score-history" class="top-scores"><a href="topscores.html">Top Scores!</a></div>
+    <div class="time-remaining">Time Remaining: 100 seconds </div>
+
+    <div id="questions-container" class="hide">
+        <div id="questions"></div>
+            <p id="questions-p"> Question</p>
+        <div id="answers" class="answer-list">
+            <button id="answer-button1" class="button">Answer 1</button>
+            <button id="answer-button2" class="button">Answer 2</button>
+            <button id="answer-button3" class="button">Answer 3</button>
+            <button id="answer-button4" class="button">Answer 4</button>
+        </div>
+    </div>    
+
+    <header>
+        <div id="opening-message">
+            <h1>Welcome to Lina's Coding Quiz!</h1>
+            <p>
+                In this quiz, you will be presented with various questions related to coding.<br>This quiz will be TIMED!!! You will start off with 100 seconds.
+                <br>    
+                <br>
+                Answer CORRECTLY and your overall score will increase by 10 points.<br>HOWEVER, every time you anser INCORRECTLY, your score will be docked 10 points AND you will lose 10 seconds on your timer. 
+                <br>
+                <br>
+                Timer will start as soon as you click the button below.
+                <br>
+                <br>
+                GOOD LUCK FRIENDS! 
+            </p>
+        </div>  
+        <button id="start-button" class="button">START GAME</button>
+    </header>
+
+    <section id="game-over" class="hide"> 
+        <h1>GAME OVER!</h1>
+
+        <p>
+            Your score is shown below! Please enter your initials to save your score. 
+        </p>
+
+        <form>
+            <input placeholder="Enter initials:" />
+            <button id="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
