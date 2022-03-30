@@ -54,34 +54,18 @@ function showQuestion(question) {
     // Displays the question
     questionsEl.innerText = question.question;
 
+    // putting the answers up...but i couldn't get it up to replace the text on the buttons...
     question.answers.forEach(answer => {
         var button = document.createElement('button');
         button.innerText = answer.text;
         button.classList.add('btn');
-        if (answers.correct) {
+        if (answer.correct) {
             button.dataset.correct = answer.correct
         }
         answersButtonEl.appendChild(button)
     })
+
 }
-   
-//     questionsEl.innerText = showQuestion.question;
-
-//    showQuestion.forEach(answers => {
-//        var button = document.createElement('button');
-//        button.innerText = answers.text;
-//        button.classList.add('btn')
-
-//        if (answers.correct) {
-//            button.dataset.correct = answers.correct;
-//        } 
-//        button:addEventListener('click', selectAnswer);
-//        answers.appendChild(button)
-//    })
-// }
-
-
-
 
 function isAnswerCorrect () {
     // if answer is not correct 
@@ -95,26 +79,6 @@ function isAnswerCorrect () {
 
 
 }
-
-// function showAnswers(questionsList) {
-//     answersButtonEl.innerText = questionsList.answers
-// }
-
-// // showing the chosen question to user
-// function showQuestion () {
-//     questionsEl.textContent = setNextQuestion;
-// }
-
-// function selectAnswer() {
-//     // if (answer === correct) {
-//     //     // show if you're correct
-//     // } else {
-//     //     // show if you're wrong 
-//     // }
-
-//     // // then you go to next question
-// }
-
 
 // function gameOver (event) {
 //     // clear timer 

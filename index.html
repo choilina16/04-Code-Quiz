@@ -48,8 +48,14 @@
         <h1>GAME OVER!</h1>
 
         <p>
-            Your score is shown below! Please enter your initials to save your score. 
+            Your score is <span id="final-score"></span>! Please enter your initials to save your score. 
         </p>
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+        <p>
+            Initials: <input type="text" id="initials" name="initials"/>
+            <button id="submit-button">Submit!</button>
+        </p>
+         
 
         <form>
             <input placeholder="Enter initials:" />
