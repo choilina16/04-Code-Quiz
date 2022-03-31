@@ -9,8 +9,6 @@ Criteria need:
 * When the all questions are answered or timer reaches 0, the game is over
 * When the game is over, I can save my initials and my score 
 
- 
-
 ## Visuals to Personal Deployed Page
 ![Web-APIs-Code-Quiz-Homework-Lina](https://user-images.githubusercontent.com/100983245/160727487-3d976ec9-5a22-4a86-a9c4-54b78dc914c8.png)
 
